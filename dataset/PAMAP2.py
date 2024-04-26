@@ -76,7 +76,7 @@ class Get_dataset(Dataset):
     def __len__(self):
         return len(self.y)
 
-def PAMAP_TS2ACT_aug(WINDOW_SIZE=500, clip_len = 256 ,dataset_dir='/home/xiakang/data/PAMAP2_Dataset',name="1-shot"):
+def PAMAP_TS2ACT_aug(clip_len = 500 ,dataset_dir='/home/xiakang/data/PAMAP2_Dataset',name="1-shot"):
     path = os.path.join(dataset_dir, name)
     xtrain = np.load(os.path.join(path,"xtrain.npy"))
     xtest = np.load(os.path.join(path,"xtest.npy"))

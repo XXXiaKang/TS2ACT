@@ -10,9 +10,7 @@ from sklearn.metrics import confusion_matrix
 from torch.utils.data import Dataset
 from clip.clip import *
 from tsaug import TimeWarp, Crop, Quantize, Drift, Reverse
-# import torchvision.transforms as transforms
-# Input data files are available in the read-only "../input/" directory
-# For example, running this (by clicking run or pressing Shift+Enter) will list all files under the input directory
+
 import os
 
 class Get_dataset_aug(Dataset):
